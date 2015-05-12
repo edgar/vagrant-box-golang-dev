@@ -5,7 +5,7 @@
     "version": "20150512",
     "providers": [{
       "name": "virtualbox",
-      "url": "golang-dev.box"
+      "url": "https://coding.net/u/coverit/p/vagrant-box-golang-dev/git/raw/20150512.0.0/golang-dev.box"
      }]
   }]
 }
