@@ -1,0 +1,11 @@
+{
+  "name": "coverit/golang-dev",
+  "description": "Ubuntu 14.04 with Golang, godep, Docker, docker-compose and Git",
+  "versions": [{
+    "version": "20150512",
+    "providers": [{
+      "name": "virtualbox",
+      "url": "golang-dev.box"
+     }]
+  }]
+}
