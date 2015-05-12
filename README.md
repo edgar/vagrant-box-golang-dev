@@ -1,6 +1,14 @@
 # vagrant-box-golang-dev
 
-> Vagrant box of Ubuntu 14.04 with Golang, godep, Docker, docker-compose and Git
+> Vagrant box of Ubuntu 14.04 with Golang, godep, Docker, docker-compose, MongoDB and Git
+
+## Features
+
+- Go 1.4.2
+- docker-compose 1.2.0
+- MongoDB 3.0.2
+- git 1.9.1
+- godep
 
 ## Getting Started
 

@@ -19,8 +19,13 @@ Vagrant.configure(2) do |config|
     tar -C /usr/local -xzf go1.4.2.linux-amd64.tar.gz
     echo export PATH=\\\$PATH:/usr/local/go/bin >> /etc/profile
 
-    # Install git
+    # Install mongodb
+    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+    echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.0.list
     apt-get update
+    apt-get install -y mongodb-org
+
+    # Install git
     apt-get install -y git
   SHELL
 
