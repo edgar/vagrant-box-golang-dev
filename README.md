@@ -6,9 +6,10 @@
 
 - Go 1.4.2
 - docker-compose 1.2.0
-- MongoDB 3.0.2
+- MongoDB 3.0.3
 - git 1.9.1
 - godep
+- node.js 0.12.3 with npm 2.9.1
 
 ## Getting Started
 

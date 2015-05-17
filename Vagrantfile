@@ -25,6 +25,10 @@ Vagrant.configure(2) do |config|
     apt-get update
     apt-get install -y mongodb-org
 
+    # Install node.js
+    apt-get install -y build-essential
+    curl -sL https://github.com/taaem/nodejs-linux-installer/releases/download/0.2/node-install.sh | bash
+
     # Install git
     apt-get install -y git
   SHELL
