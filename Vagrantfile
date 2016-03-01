@@ -13,16 +13,19 @@ Vagrant.configure(2) do |config|
     sudo apt-get update
 
     # Install docker-compose
-    curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+    curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
     chmod +x /usr/local/bin/docker-compose
 
     # Install go
-    curl -O https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz
-    tar -C /usr/local -xzf go1.5.3.linux-amd64.tar.gz
+    curl -O https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
+    tar -C /usr/local -xzf go1.6.linux-amd64.tar.gz
     echo export PATH=\\\$PATH:/usr/local/go/bin >> /etc/profile
 
     # Install git
     apt-get install -y git
+
+    # Install inotify
+    apt-get install -y inotify-tools
   SHELL
 
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
